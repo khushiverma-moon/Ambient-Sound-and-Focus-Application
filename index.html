@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peace Bloom 🦋</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Dashboard">
+        <header>
+            <h1>✨🎵 CREATE YOUR PERFECT SOUNDSCAPE 🎵✨</h1>
+            <h2>🌿Breathe. 🎯Focus. ⭐Become.</h2>
+            <p>(Instruction: Tap/Click One or More Icons to Play Sounds)</p>
+        </header>
+        <div class="grid">
+
+            <div class="card" id="card-rain">
+                <div class="icon" onclick="toggleSound('rain')">🌧️</div>
+                <h3>Cozy Rain</h3>
+                <input type="range" id="slider-rain" min="0" max="1" step="0.01" value="0.5" disabled oninput="changeVolume('rain',this.value)" >
+                <audio id="audio-rain" loop src="dragon-studio-gentle-rain-07-437321.mp3"></audio>
+            </div>
+            
+            <div class="card" id="card-forest">
+                <div class="icon" onclick="toggleSound('forest')">🌲</div>
+                <h3>Forest Birds</h3>
+                <input type="range" id="slider-forest" min="0" max="1" step="0.01" value="0.5" disabled oninput="changeVolume('forest', this.value)">
+                <audio id="audio-forest" loop src="oxidvideos-chirping-birds-ambience-217410.mp3"></audio>
+            </div>
+
+            <div class="card" id="card-fire">
+                <div class="icon" onclick="toggleSound('fire')">🔥</div>
+                <h3>Campfire</h3>
+                <input type="range" id="slider-fire" min="0" max="1" step="0.01" value="0.5" disabled oninput="changeVolume('fire', this.value)">
+                <audio id="audio-fire" loop src="soundreality-fire-crackling-528620.mp3"></audio>
+            </div>
+
+            <div class="card" id="card-storm">
+                <div class="icon" onclick="toggleSound('storm')">🌪️</div>
+                <h3>Storm</h3>
+                <input type="range" id="slider-storm" min="0" max="1" step="0.01" value="0.5" disabled oninput="changeVolume('storm', this.value)">
+                <audio id="audio-storm" loop src="wings_of_freedom-storm-417583.mp3"></audio>
+            </div>
+    
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

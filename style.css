@@ -1,0 +1,112 @@
+body{
+    background: radial-gradient(circle at center,#422986,#171168,#1c1b4b , #070514);
+    color: #e2e8f0;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.dashboard{
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+header h1{
+    font-size: 2.5rem;
+    margin-bottom: 0.2rem;
+    color:rgb(191, 195, 230);
+}
+
+header h2{
+    color: #b6c1d1;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+header p{
+    color: rgb(240, 221, 224);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fir, minmax(800px,1fr));
+    gap: 1.5rem;
+}
+
+#card-forest{
+    background: rgba(6, 83, 25, 0.815);
+    border: 1px solid rgba(3, 46, 14, 0.815) ;
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    backdrop-filter: blur(10px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+#card-rain{
+    background: rgba(19, 183, 212, 0.774);
+    border: 1px solid rgba(6, 72, 83, 0.774);
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    backdrop-filter: blur(10px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+#card-storm{
+    background: rgba(255, 255, 255, 0.596);
+    border: 1px solid rgba(255, 255, 255, 0.178);
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    backdrop-filter: blur(10px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+#card-fire{
+    background: rgba(161, 18, 18, 0.884);
+    border: 1px solid rgba(83, 7, 7, 0.884);
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    backdrop-filter: blur(10px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon {
+    font-size: 3.5rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+    user-select: none;
+}
+
+.icon:hover {
+    transform: scale(1.02);
+}
+
+.card h3 {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Active Glow state applied by JavaScript */
+.card.active {
+    background: rgba(99, 102, 241, 0.1);
+    border-color: #6366f1;
+    box-shadow: 0 0 25px rgba(99, 102, 241, 0.25);
+}
+
+input[type="range"] {
+    width: 100%;
+    accent-color: rgb(224, 219, 219);
+    cursor: pointer;
+    background-color: red;
+    border-radius: 100px;
+    height: 20px;
+    outline: none;
+}
+
+input[type="range"]:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
