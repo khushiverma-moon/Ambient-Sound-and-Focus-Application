@@ -7,6 +7,9 @@ body{
     justify-content: center;
     align-items: center;
     margin: 0;
+    padding-left:16px;
+    padding-right:16px:
+    box-sizing: border-box;
 }
 
 .dashboard{
@@ -19,6 +22,7 @@ header h1{
     font-size: 2.5rem;
     margin-bottom: 0.2rem;
     color:rgb(191, 195, 230);
+    text-align: center;
 }
 
 header h2{
