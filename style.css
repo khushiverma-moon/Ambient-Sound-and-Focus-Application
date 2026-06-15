@@ -45,6 +45,7 @@ header p{
     grid-auto-rows: max-content;
     gap: 1.5rem;
     padding: 0 1.5rem;
+    align-items: start;
 }
 
 @media(min-width:850px){
